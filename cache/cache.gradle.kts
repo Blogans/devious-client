@@ -42,6 +42,7 @@ dependencies {
     implementation(group = "com.google.guava", name = "guava", version = "30.1.1-jre")
     implementation(group = "commons-cli", name = "commons-cli", version = "1.4")
     implementation(group = "io.netty", name = "netty-buffer", version = "4.1.54.Final")
+    implementation(group = "io.netty", name = "netty-all", version = "4.1.54.Final")
     implementation(group = "com.squareup.okhttp3", name = "okhttp", version = "4.9.1")
     implementation(group = "org.antlr", name = "antlr4-runtime", version = "4.13.1")
     implementation(group = "org.apache.commons", name = "commons-compress", version = "1.21")

@@ -8,6 +8,10 @@ public interface PacketBuffer extends Buffer
 
 	IsaacCipher getIsaacCipher();
 
+	void setIsaacCipher(IsaacCipher isaacCipher);
+
+	void newIsaacCipher(int[] var1);
+
 	boolean isAutomated();
 
 	void consume();

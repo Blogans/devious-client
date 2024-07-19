@@ -1697,4 +1697,7 @@ public interface RSClient extends RSGameEngine, Client
 	 */
 
 	boolean useCachedUUID();
+
+	@Import("hadNetworkError")
+	boolean hadNetworkError();
 }

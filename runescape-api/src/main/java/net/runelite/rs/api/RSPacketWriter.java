@@ -1,5 +1,7 @@
 package net.runelite.rs.api;
 
+import net.runelite.api.packets.AbstractSocket;
+import net.runelite.api.packets.IsaacCipher;
 import net.runelite.api.packets.PacketWriter;
 import net.runelite.mapping.Import;
 
@@ -30,6 +32,9 @@ public interface RSPacketWriter extends PacketWriter
 	@Import("socket")
 	RSAbstractSocket getSocket();
 
+	@Import("setSocket")
+	void setSocket(AbstractSocket var1);
+
 	@Import("packetBuffer")
 	RSPacketBuffer getPacketBuffer();
 
@@ -42,9 +47,21 @@ public interface RSPacketWriter extends PacketWriter
 	@Import("bufferSize")
 	void setBufferSize(int size);
 
+	@Import("field1457")
+	int getRemainingWrites();
+
+	@Import("field1457")
+	void setRemainingWrites(int writes);
+
 	@Import("pendingWrites")
 	int getPendingWrites();
 
 	@Import("pendingWrites")
 	void setPendingWrites(int writes);
+
+	@Import("flush")
+	void flush();
+
+	@Import("getSocket")
+	RSAbstractSocket getAbstractSocket();
 }

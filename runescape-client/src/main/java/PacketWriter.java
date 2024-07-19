@@ -63,6 +63,7 @@ public class PacketWriter {
 	@ObfuscatedGetter(
 		intValue = -1278220435
 	)
+	@Export("field1457")
 	int field1457;
 	@ObfuscatedName("ae")
 	@ObfuscatedGetter(

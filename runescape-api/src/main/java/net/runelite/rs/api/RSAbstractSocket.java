@@ -1,9 +1,9 @@
 package net.runelite.rs.api;
 
+import net.runelite.api.packets.AbstractSocket;
 import net.runelite.mapping.Import;
 
-public interface RSAbstractSocket
-{
+public interface RSAbstractSocket extends AbstractSocket {
 	@Import("isAvailable")
 	boolean isAvailable(int num);
 

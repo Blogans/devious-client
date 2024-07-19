@@ -2793,6 +2793,7 @@ public interface Client extends OAuthApi, GameEngine
 	 * @return the client's PacketWriter.
 	 */
 	PacketWriter getPacketWriter();
+	boolean hadNetworkError();
 
 	/**
 	 * Used to prepare a packet which can then be queued to the PacketWriter.

@@ -1,3 +1,10 @@
 package net.runelite.rs.api;
 
-public interface RSBufferedNetSocket extends RSAbstractSocket {}
+import net.runelite.mapping.Import;
+
+import java.net.Socket;
+
+public interface RSBufferedNetSocket extends RSAbstractSocket {
+    @Import("socket")
+    Socket getSocket();
+}
